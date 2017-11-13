@@ -1,0 +1,12 @@
+
+<div class="answer">
+<h3><%= @query %></h3>
+<p>- You</p>
+<br>
+<h3><%= @query.include?("?") ? "Don't ask so many questions" : "That's not a question" %></h3>
+<p>- Your coach</p>
+<br>
+<%= link_to "Ask a new question", '/ask' %>
+</div>
+
+
